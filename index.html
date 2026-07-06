@@ -320,6 +320,13 @@ function openLetter(){
     document.getElementById("noteBox").style.display = "block";
 
 }
+	fetch("YOUR_GOOGLE_APPS_SCRIPT_URL", {
+    method: "POST",
+    body: JSON.stringify({
+        opened: true,
+        time: new Date().toLocaleString()
+    })
+});
 
 </script>
 
